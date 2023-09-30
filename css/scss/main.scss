@@ -1,0 +1,25 @@
+$containerWidth: rem(940px);
+$baseFontSize: rem(18px);
+
+//colors
+$mainGrey: #F5F5F5;
+$red: #E01F3D;
+
+//normalize
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+//setups
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import 'layout';
+
+//components
+
+@import 'hero';
+@import 'header';
+@import 'features';
+@import 'section';
+@import 'benefits';
+@import 'benefit';
+@import 'reviews';
+@import 'order';

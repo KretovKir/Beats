@@ -1,0 +1,169 @@
+.order-section {
+  background: url("../img/order-back.png");
+}
+
+.section__title--order {
+  color: white;
+}
+
+.order__form {
+  display: flex;
+}
+
+.form__col {
+  flex: 1;
+  margin-right: rem(27px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.form__row {
+  display: flex;
+  flex: 1;
+  margin-bottom: rem(15px);
+}
+
+.form__block {
+  flex: 1;
+  margin-right: rem(16px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.form__title {
+  margin-bottom: rem(2px);
+  font-family: "Play";
+  color: white;
+  font-size: rem(16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.form__input {
+  width: 100%;
+  padding: rem(18px) rem(12px);
+  border: rem(3px) solid transparent;
+
+  &:focus {
+    border-color: #e01f3d;
+    outline: none;
+  }
+}
+
+.form__input--textarea {
+  resize: none;
+  height: rem(160px);
+  margin-bottom: rem(25px);
+}
+.radio__forms {
+  display: flex;
+  margin-bottom: rem(16px);
+}
+
+.radio__item {
+  display: flex;
+  margin-right: rem(24px);
+  align-items: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.radio__elem {
+  display: none;
+
+  &:checked ~ .radio__visible {
+    &::before {
+      display: block;
+    }
+  }
+}
+
+.radio__visible {
+  width: rem(25px);
+  height: rem(25px);
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: rem(13px);
+    height: rem(13px);
+    background-color: #e01f3d;
+    top: 23%;
+    left: 25%;
+    transform: translate(-25% -30%);
+    border-radius: 50%;
+    display: none;
+  }
+}
+
+.radio__title {
+  margin-left: rem(10px);
+}
+
+.form__call {
+  display: flex;
+}
+
+.call {
+  margin-right: rem(10px);
+  display: none;
+
+  &:checked ~ .call__visible {
+    &::before {
+      display: block;
+    }
+  }
+}
+
+.call__visible {
+  width: rem(25px);
+  height: rem(24px);
+  border-radius: rem(5px);
+  background-color: white;
+  position: relative;
+
+  &::before {
+    content: url("../img/checkmark.png");
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    transform: translate(-5% -30%);
+    display: none;
+  }
+}
+
+.form__title {
+  margin-left: rem(10px);
+}
+
+.form__buttons {
+  margin-top: rem(44px);
+}
+
+.form__reset {
+  border: transparent;
+  background-color: transparent;
+  font-family: Play;
+  font-size: rem(16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: white;
+  margin-left: rem(15px);
+  cursor: pointer;
+
+  &:hover{
+    color: $red;
+  }
+}
+

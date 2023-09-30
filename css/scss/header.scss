@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+
+.menu__link {
+  font-size: $baseFontSize;
+  font-weight: 400;
+  line-height: rem(30px);
+  color: #292929;
+
+  &:hover{
+    color: #E01F3D;
+  }
+}
+
+.menu__item {
+  margin-right: rem(27px);
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.tel {
+  color: #292929;
+  margin-left: rem(6px);
+  display: flex;
+  align-items: center;
+  width: rem(14px);
+  height: rem(14px);
+}

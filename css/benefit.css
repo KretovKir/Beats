@@ -1,0 +1,8 @@
+.benefit__wrapper {
+  display: inline-block;
+  background-color: #F2F5F4;
+  border-radius: 50%;
+  height: 128px;
+  width: 128px;
+  overflow: hidden;
+}

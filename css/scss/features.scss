@@ -1,0 +1,23 @@
+.features{
+    display: flex;
+}
+
+.feature__icon{
+    width: rem(41px);
+    height: rem(41px);
+}
+
+.feature__item{
+    margin-right: rem(40px);
+    display: flex;
+    align-items: center;
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.feature__text{
+    margin-left: rem(10px);
+    max-width: rem(114px);
+}

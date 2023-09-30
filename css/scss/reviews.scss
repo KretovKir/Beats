@@ -1,0 +1,78 @@
+.review__display {
+  background: #f8faf9;
+  padding: rem(42px) rem(42px);
+  display: flex;
+}
+
+.reviews__avatar {
+  width: rem(253px);
+  height: rem(264px);
+}
+
+.review__photo {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.review__content {
+  flex: 1;
+  margin-left: rem(40px);
+}
+
+.review__title {
+  font-family: "Play";
+  font-size: rem(24px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: rem(27px);
+  color: black;
+}
+
+.review__text {
+  font-family: "Play";
+  font-size: rem(16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: rem(38px);
+}
+
+.review__author {
+  color: black;
+  font-family: "Play";
+  font-size: rem(18px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.reviews__switcher {
+  display: flex;
+  justify-content: center;
+  margin-top: rem(15px);
+}
+
+.reviews__switcher-item {
+  width: rem(74px);
+  height: rem(74px);
+  margin-right: rem(6px);
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.reviews__switcher-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.switcher-active{
+    border-radius: 50%;
+    border: rem(4px) solid #E01F3D;
+}

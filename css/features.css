@@ -1,0 +1,14 @@
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feature__icon {
+  width: 41px;
+  height: 41px;
+}
+
+.features__item {
+  margin-right: 15px;
+}
