@@ -1,5 +1,13 @@
 .order-section {
   background: url("../img/order-back.png");
+
+  @include  tablets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
 }
 
 .section__title--order {
@@ -8,6 +16,13 @@
 
 .order__form {
   display: flex;
+
+  @include tablets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .form__col {
@@ -15,6 +30,12 @@
   margin-right: rem(27px);
 
   &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablets{
+    max-width: rem(470px);
+    width: 100%;
     margin-right: 0;
   }
 }
@@ -28,6 +49,7 @@
 .form__block {
   flex: 1;
   margin-right: rem(16px);
+
 
   &:last-child {
     margin-right: 0;
@@ -48,6 +70,7 @@
   width: 100%;
   padding: rem(18px) rem(12px);
   border: rem(3px) solid transparent;
+  border-radius: 5px;;
 
   &:focus {
     border-color: #e01f3d;
@@ -59,6 +82,10 @@
   resize: none;
   height: rem(160px);
   margin-bottom: rem(25px);
+
+  @include tablets{
+    flex: 1;
+  }
 }
 .radio__forms {
   display: flex;
@@ -148,6 +175,12 @@
 
 .form__buttons {
   margin-top: rem(44px);
+
+  @include tablets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .form__reset {

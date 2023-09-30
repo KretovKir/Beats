@@ -7,23 +7,38 @@ body {
   height: 100%;
 }
 
-body {
+html {
   font-size: $baseFontSize;
+
+  @include tablets{
+    font-size: $baseFontSize - 1px;
+  }
+  
+  @include phones{
+    font-size: $baseFontSize - 2px;
+  }
+}
+
+body {
   font-family: "Play", sans-serif;
   position: relative;
   color: #666;
 }
 
 .wrapper {
-  min-width: $containerWidth + rem(20px);
+  min-width: 95%;
   min-height: 100%;
   overflow: hidden;
   position: relative;
 }
 
 .container {
-  width: $containerWidth;
+  width: rem($containerWidth);
   margin: 0 auto;
+
+  @include tablets{
+    width: 95%;
+  }
 }
 
 h1,
@@ -71,7 +86,7 @@ a {
   max-height: rem(54px);
   padding: rem(21px) rem(41px);
   text-align: center;
-  font-family: 'Play';
+  font-family: "Play";
   font-size: rem(16px);
   font-style: normal;
   font-weight: 700;
@@ -85,9 +100,8 @@ a {
     background-color: $red;
     color: white;
 
-    &:hover{
+    &:hover {
       background-color: rgb(255, 0, 34);
     }
   }
-
 }
