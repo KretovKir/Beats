@@ -50,6 +50,12 @@
 
   @include tablets {
     max-width: 75%;
+    font-size: rem(32px);
+    line-height: rem(36px);
+
+    &::after{
+      content: url('../../img/headphones.png');
+    }
   }
 }
 
@@ -63,7 +69,15 @@
   margin-bottom: rem(57px);
   margin-top: rem(22px);
 
-  @include tablets{
+  @include tablets {
     max-width: rem(371px);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  @include phones{
+    color: black;
   }
 }

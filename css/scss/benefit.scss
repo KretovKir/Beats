@@ -1,8 +1,8 @@
-.benefit__wrapper{
+.benefit__wrapper {
     display: inline-block;
-    background-color: #F2F5F4;
+    background-color: #f2f5f4;
     border-radius: 50%;
-    height:rem(128px);
+    height: rem(128px);
     width: rem(128px);
     overflow: hidden;
     position: relative;
@@ -10,7 +10,7 @@
     margin-bottom: rem(24px);
 }
 
-.benefit__icon{
+.benefit__icon {
     width: rem(68px);
     height: rem(68px);
     position: absolute;
@@ -19,6 +19,13 @@
     transform: translate(-50%, -50%);
 }
 
-.benefit__title{
+.benefit__title {
     margin-bottom: rem(7px);
+
+    @include phones {
+        font-size: rem(24px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
 }

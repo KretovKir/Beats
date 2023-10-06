@@ -176,6 +176,11 @@ a {
 @media screen and (max-width: 768px) {
   .hero__title {
     max-width: 75%;
+    font-size: 1.7777777778rem;
+    line-height: 2rem;
+  }
+  .hero__title::after {
+    content: url("../../img/headphones.png");
   }
 }
 
@@ -192,6 +197,15 @@ a {
 @media screen and (max-width: 768px) {
   .hero__description {
     max-width: 20.6111111111rem;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__description {
+    color: black;
   }
 }
 
@@ -346,6 +360,16 @@ a {
   margin-bottom: 3.0555555556rem;
   text-align: center;
 }
+@media screen and (max-width: 480px) {
+  .section__title {
+    font-family: Play;
+    font-size: 1.7777777778rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+  }
+}
 
 .headline {
   text-align: center;
@@ -358,6 +382,15 @@ a {
 
 .headline__subtitle {
   padding: 0 20%;
+}
+@media screen and (max-width: 480px) {
+  .headline__subtitle {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+  }
 }
 
 .benefits {
@@ -410,6 +443,10 @@ a {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    font-size: 0.8888888889rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 }
 
@@ -426,7 +463,7 @@ a {
 
 .benefit__wrapper {
   display: inline-block;
-  background-color: #F2F5F4;
+  background-color: #f2f5f4;
   border-radius: 50%;
   height: 7.1111111111rem;
   width: 7.1111111111rem;
@@ -448,6 +485,14 @@ a {
 
 .benefit__title {
   margin-bottom: 0.3888888889rem;
+}
+@media screen and (max-width: 480px) {
+  .benefit__title {
+    font-size: 1.3333333333rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
 }
 
 .review__display {
