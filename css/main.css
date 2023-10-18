@@ -870,3 +870,138 @@ a {
 .form__reset:hover {
   color: #E01F3D;
 }
+
+.slider__section {
+  background-color: #f8faf9;
+}
+
+.slider__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 52.2222222222rem;
+  overflow: hidden;
+}
+
+.slider__items {
+  position: relative;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 52.2222222222rem;
+}
+
+.slider__img {
+  width: 25.1111111111rem;
+  height: 25.1111111111rem;
+}
+
+.slider__right {
+  margin-left: 3.2777777778rem;
+}
+
+.slider__tools {
+  border-radius: 4px;
+  background: #9a9a9a;
+  width: 5.0555555556rem;
+  height: 5.0555555556rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.3888888889rem;
+}
+
+.slider__title {
+  font-family: "Play";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 1.3333333333rem;
+}
+
+.slider__description {
+  margin-bottom: 1.6666666667rem;
+  font-family: "Play";
+  font-size: 0.8888888889rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.slider__parametres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.3333333333rem;
+}
+
+.slider__parametres-item {
+  margin-right: 2.4444444444rem;
+}
+.slider__parametres-item:last-child {
+  margin-right: 0;
+}
+
+.slider__right-bottom-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider__price {
+  color: #151515;
+  font-family: "Play";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.3333333333rem; /* 166.667% */
+  text-transform: uppercase;
+  margin-right: 0.8333333333rem;
+}
+
+.slider__parametres-title {
+  font-family: "Play";
+  font-size: 0.8888888889rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.slider__parametres-value {
+  color: black;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
