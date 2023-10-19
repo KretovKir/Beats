@@ -885,10 +885,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
-.slider {
+#slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -896,7 +895,7 @@ a {
   overflow: hidden;
 }
 
-.slider__items {
+#slider__items {
   position: relative;
   right: 0;
   display: -webkit-box;
@@ -904,7 +903,7 @@ a {
   display: flex;
 }
 
-.slider__item {
+#slider__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -923,6 +922,17 @@ a {
   margin-left: 3.2777777778rem;
 }
 
+.slider__dropdown {
+  background: rgb(255, 255, 255);
+  width: 15.1666666667rem;
+  height: 16.3333333333rem;
+  border-radius: 4px;
+  display: none;
+  position: absolute;
+  top: 10;
+  left: 33.6111111111rem;
+}
+
 .slider__tools {
   border-radius: 4px;
   background: #9a9a9a;
@@ -938,6 +948,54 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 1.3888888889rem;
+  position: relative;
+}
+.slider__tools:hover ~ .slider__dropdown {
+  display: block;
+  z-index: 1;
+}
+
+.slider__dropdown-list {
+  margin: 1.3333333333rem 1.4444444444rem;
+}
+
+.slider__dropdown-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.3888888889rem;
+}
+.slider__dropdown-item:last-child {
+  margin-bottom: 0;
+}
+
+.slider__right-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider__dropdown-text {
+  font-family: "Play";
+  width: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 0.8333333333rem;
+}
+
+.slider__dropdown-parametres {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3333333333rem;
+  color: black;
 }
 
 .slider__title {
