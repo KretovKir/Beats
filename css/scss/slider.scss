@@ -17,6 +17,7 @@
     position: relative;
     right: 0;
     display: flex;
+    transition: right  .3s ;
 }
 
 #slider__item {
@@ -116,6 +117,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    max-width: rem(368px);
 }
 
 .slider__parametres {

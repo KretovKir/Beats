@@ -901,6 +901,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: right 0.3s;
+  transition: right 0.3s;
 }
 
 #slider__item {
@@ -1015,6 +1017,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  max-width: 20.4444444444rem;
 }
 
 .slider__parametres {
