@@ -1,37 +1,44 @@
 const leftArrow = document.querySelector('#leftArrow');
 const rightArrow = document.querySelector('#rightArrow');
-const slider = document.querySelector('#slider');
 const list = document.querySelector('#slider__items');
-const sliderItem = document.querySelector('#slider__item');
-const computedStyles = getComputedStyle(list);
-const computedStylesWidth = getComputedStyle(sliderItem);
-const sliderWidth = getComputedStyle(slider);
+const computedStyles = window.getComputedStyle(list);
+const items = document.querySelectorAll('#slider__item');
+
+
+
+console.log(items);
+
+const step = parseInt(window.getComputedStyle(items[0]).width);
+const minRight = 0;
+let maxRight = (items.length - 1) * step;
+var totalRight = 0;
+
+console.log(step);
+
+list.style.right = totalRight;
 
 leftArrow.addEventListener('click', function(event){
-    event.preventDefault();
-    let currentPosition = parseInt(computedStyles.right);
-    let currentWidth = parseInt(computedStylesWidth.width);
-    let currentSliderWidth = parseInt(sliderWidth.width);
-    if (currentPosition>currentWidth){
-        list.style.right = `${currentPosition - currentWidth}px`;
-        console.log(currentSliderWidth);
-    }else{
-        currentPosition = 940;
-        list.style.right = `${currentPosition}px`;
-    }
+        event.preventDefault();
+        if (totalRight>minRight){
+            totalRight-=step;
+            
+        }else{
+            totalRight = maxRight;
+        }
+        list.style.right = `${totalRight}px`;
 });
 
 rightArrow.addEventListener('click', function(event){
-    let currentPosition = parseInt(computedStyles.right);
-    let currentWidth = parseInt(computedStylesWidth.width);
     event.preventDefault();
-    
-    if (currentPosition<currentWidth){
-        list.style.right = `${currentPosition + currentWidth}px`;
-        console.log(currentWidth);
+    if (totalRight<maxRight){
+        totalRight+=step;
+       
     }else{
-        currentPosition = 0;
-        list.style.right = `${currentPosition}px`;
-        console.log(currentWidth);
+        totalRight = minRight;
     }
-})
+    list.style.right = `${totalRight}px`;
+});
+
+
+
+
