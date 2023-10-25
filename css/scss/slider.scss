@@ -31,6 +31,13 @@
     justify-content: center;
     align-items: center;
   }
+
+  @include phones{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .slider__img {
@@ -48,6 +55,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  @include phones{
+    max-width: rem(412px);
+    align-items: center; //////////!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   }
 }
 
