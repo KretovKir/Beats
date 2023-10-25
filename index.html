@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/main.css" />
+  <script defer src="scripts/modal.js"></script>
   <script defer src="scripts/slider.js"></script>
   <title>Beats</title>
 </head>
@@ -157,7 +158,7 @@
 
       <section class="section slider__section">
         <div class="slider__main">
-          <a href="#" id="leftArrow"> <img src="img/left.png" alt=""> </a>
+          <a href="#" id="leftArrow"> <img src="img/left.png" alt="left"> </a>
           <div class="container">
             <div id="slider">
               <ul id="slider__items">
@@ -487,6 +488,22 @@
           </form>
         </div>
       </section>
+    </div>
+    <div class="modal">
+      <div class="modal__cross" id="modal__cross">
+        <img src="img/close.png" alt="close" class="close-cross">
+      </div>
+      <div class="modal__menu">
+        <ul class="modal__list">
+          <li class="modal__menu-item"><a href="#" class="modal__menu-link">О нас</a></li>
+          <li class="modal__menu-item"><a href="#" class="modal__menu-link">Наушники</a></li>
+          <li class="modal__menu-item"><a href="#" class="modal__menu-link">Команда</a></li>
+          <li class="modal__menu-item"><a href="#" class="modal__menu-link">Цены</a></li>
+          <li class="modal__menu-item"><a href="#" class="modal__menu-link">Отзывы</a></li>
+          <li class="modal__menu-item"><a href="#" class="modal__menu-link">Как мы работаем</a></li>
+          <li class="modal__menu-item"><a href="#" class="modal__menu-link">Контакты</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </body>

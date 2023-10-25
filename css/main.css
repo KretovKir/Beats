@@ -274,6 +274,8 @@ a {
   display: none;
   width: 26px;
   height: 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 @media screen and (max-width: 768px) {
   .hamburger {
@@ -914,6 +916,20 @@ a {
           align-items: center;
   width: 52.2222222222rem;
 }
+@media screen and (max-width: 768px) {
+  #slider__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .slider__img {
   width: 25.1111111111rem;
@@ -923,6 +939,25 @@ a {
 .slider__right {
   margin-left: 3.2777777778rem;
 }
+@media screen and (max-width: 768px) {
+  .slider__right {
+    margin-left: 0px;
+    max-width: 34.1111111111rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .slider__dropdown {
   background: rgb(255, 255, 255);
@@ -931,7 +966,7 @@ a {
   border-radius: 4px;
   display: none;
   position: absolute;
-  top: 10;
+  top: 10px;
   left: 33.6111111111rem;
 }
 
@@ -955,6 +990,11 @@ a {
 .slider__tools:hover ~ .slider__dropdown {
   display: block;
   z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  .slider__tools {
+    display: none;
+  }
 }
 
 .slider__dropdown-list {
@@ -1009,6 +1049,16 @@ a {
   text-transform: uppercase;
   margin-bottom: 1.3333333333rem;
 }
+@media screen and (max-width: 768px) {
+  .slider__title {
+    font-size: 1.5555555556rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 2.7777777778rem;
+  }
+}
 
 .slider__description {
   margin-bottom: 1.6666666667rem;
@@ -1018,6 +1068,11 @@ a {
   font-weight: 400;
   line-height: normal;
   max-width: 20.4444444444rem;
+}
+@media screen and (max-width: 768px) {
+  .slider__description {
+    max-width: 34.4444444444rem;
+  }
 }
 
 .slider__parametres {
@@ -1065,4 +1120,69 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.modal {
+  display: none;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #333537;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    overflow: hidden;
+  }
+}
+
+.modal__cross {
+  width: 100%;
+  height: 1.1111111111rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.close-cross {
+  height: 100%;
+  width: 1.1111111111rem;
+  margin: 2.3333333333rem 2.3333333333rem;
+}
+
+.modal__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.modal__menu-link {
+  text-decoration: none;
+  color: white;
+}
+
+.modal__menu-item {
+  margin-bottom: 1.3888888889rem;
+  font-family: "Play";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
 }

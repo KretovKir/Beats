@@ -1,165 +1,195 @@
 .slider__section {
-    background-color: #f8faf9;
+  background-color: #f8faf9;
 }
 .slider__main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+
 #slider {
-    display: flex;
-    width: rem(940px);
-    overflow: hidden;
+  display: flex;
+  width: rem(940px);
+  overflow: hidden;
 }
 
 #slider__items {
-    position: relative;
-    right: 0;
-    display: flex;
-    transition: right  .3s ;
+  position: relative;
+  right: 0;
+  display: flex;
+  transition: right 0.3s;
 }
 
 #slider__item {
-    display: flex;
+  display: flex;
+  align-items: center;
+  width: rem(940px);
+
+  @include tablets {
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: rem(940px);
+  }
 }
 
 .slider__img {
-    width: rem(452px);
-    height: rem(452px);
+  width: rem(452px);
+  height: rem(452px);
 }
 
 .slider__right {
-    margin-left: rem(59px);
+  margin-left: rem(59px);
+
+  @include tablets {
+    margin-left: 0px;
+    max-width: rem(614px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .slider__dropdown {
-    background: rgba(255, 255, 255, 1);
-    width: rem(273px);
-    height: rem(294px);
-    border-radius: 4px;
-    display: none;
-    position: absolute;
-    top: 10;
-    left: rem(605px);
+  background: rgba(255, 255, 255, 1);
+  width: rem(273px);
+  height: rem(294px);
+  border-radius: 4px;
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: rem(605px);
 }
 
 .slider__tools {
-    border-radius: 4px;
-    background: #9a9a9a;
-    width: rem(91px);
-    height: rem(91px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: rem(25px);
-    position: relative;
+  border-radius: 4px;
+  background: #9a9a9a;
+  width: rem(91px);
+  height: rem(91px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: rem(25px);
+  position: relative;
 
-    &:hover ~ .slider__dropdown {
-        display: block;
-        z-index: 1;
-      }
+  &:hover ~ .slider__dropdown {
+    display: block;
+    z-index: 1;
+  }
+
+  @include tablets {
+    display: none;
+  }
 }
 
-
-
 .slider__dropdown-list {
-    margin: rem(24px) rem(26px);
+  margin: rem(24px) rem(26px);
 }
 
 .slider__dropdown-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: rem(25px);
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(25px);
 
-    &:last-child {
-        margin-bottom: 0;
-    }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .slider__right-content {
-    display: flex;
+  display: flex;
 }
 
 .slider__dropdown-text {
-    font-family: 'Play';
-    width: rem(180px);
-    display: flex;
-    justify-content: space-between;
-    margin-left: rem(15px);
+  font-family: "Play";
+  width: rem(180px);
+  display: flex;
+  justify-content: space-between;
+  margin-left: rem(15px);
 }
 
 .slider__dropdown-parametres {
-    
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: rem(24px);
-    color: black;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: rem(24px);
+  color: black;
 }
 
 .slider__title {
-    font-family: "Play";
-    font-size: 36px;
+  font-family: "Play";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: rem(24px);
+
+  @include tablets {
+    font-size: rem(28px);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
-    margin-bottom: rem(24px);
+    margin-top: rem(50px);
+  }
 }
 
 .slider__description {
-    margin-bottom: rem(30px);
-    font-family: "Play";
-    font-size: rem(16px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    max-width: rem(368px);
+  margin-bottom: rem(30px);
+  font-family: "Play";
+  font-size: rem(16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: rem(368px);
+
+  @include tablets{
+    max-width: rem(620px);
+  }
 }
 
 .slider__parametres {
-    display: flex;
-    margin-bottom: rem(24px);
+  display: flex;
+  margin-bottom: rem(24px);
 }
 
 .slider__parametres-item {
-    margin-right: rem(44px);
+  margin-right: rem(44px);
 
-    &:last-child {
-        margin-right: 0;
-    }
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .slider__right-bottom-line {
-    display: flex;
+  display: flex;
 }
 
 .slider__price {
-    color: #151515;
-    font-family: "Play";
-    font-size: rem(36px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: rem(60px); /* 166.667% */
-    text-transform: uppercase;
-    margin-right: rem(15px);
+  color: #151515;
+  font-family: "Play";
+  font-size: rem(36px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: rem(60px); /* 166.667% */
+  text-transform: uppercase;
+  margin-right: rem(15px);
 }
 
 .slider__parametres-title {
-    font-family: "Play";
-    font-size: rem(16px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  font-family: "Play";
+  font-size: rem(16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .slider__parametres-value {
-    color: black;
-    font-size: rem(18px);
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  color: black;
+  font-size: rem(18px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
